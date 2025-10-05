@@ -1,4 +1,5 @@
 import React from 'react';
+import "../components/Styling/Home.scss"
 
 const Home: React.FC = () => {
     return (

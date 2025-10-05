@@ -1,0 +1,116 @@
+@import './variables';
+
+.home-page {
+    min-height: 100vh;
+    background: $background;
+    font-family: $font-family;
+
+    .hero-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 70vh;
+        padding: $spacing-2xl $spacing-lg;
+        text-align: center;
+        background: linear-gradient(135deg, rgba(99, 102, 241, 0.05) 0%, rgba(139, 92, 246, 0.05) 100%);
+
+        h1 {
+            font-size: $font-size-4xl;
+            font-weight: 700;
+            color: $text-primary;
+            margin-bottom: $spacing-md;
+            line-height: 1.2;
+
+            @media (max-width: $breakpoint-md) {
+                font-size: $font-size-3xl;
+            }
+        }
+
+        p {
+            font-size: $font-size-xl;
+            color: $text-secondary;
+            margin-bottom: $spacing-xl;
+            max-width: 600px;
+
+            @media (max-width: $breakpoint-md) {
+                font-size: $font-size-lg;
+            }
+        }
+
+        .cta-button {
+            background: $primary;
+            color: $white;
+            border: none;
+            padding: $spacing-md $spacing-xl;
+            font-size: $font-size-lg;
+            font-weight: 600;
+            border-radius: $radius-lg;
+            cursor: pointer;
+            transition: all $transition-base;
+            box-shadow: $shadow-md;
+
+            &:hover {
+                background: $primary-hover;
+                transform: translateY(-2px);
+                box-shadow: $shadow-lg;
+            }
+
+            &:active {
+                transform: translateY(0);
+            }
+        }
+    }
+
+    .features-section {
+        padding: $spacing-2xl $spacing-lg;
+        max-width: 1200px;
+        margin: 0 auto;
+
+        h2 {
+            font-size: $font-size-3xl;
+            font-weight: 700;
+            color: $text-primary;
+            text-align: center;
+            margin-bottom: $spacing-xl;
+
+            @media (max-width: $breakpoint-md) {
+                font-size: $font-size-2xl;
+            }
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: $spacing-xl;
+            margin-top: $spacing-xl;
+
+            .feature {
+                background: $white;
+                padding: $spacing-xl;
+                border-radius: $radius-xl;
+                box-shadow: $shadow-sm;
+                transition: all $transition-base;
+                border: 1px solid $border;
+
+                &:hover {
+                    transform: translateY(-4px);
+                    box-shadow: $shadow-lg;
+                }
+
+                h3 {
+                    font-size: $font-size-xl;
+                    font-weight: 600;
+                    color: $text-primary;
+                    margin-bottom: $spacing-sm;
+                }
+
+                p {
+                    font-size: $font-size-base;
+                    color: $text-secondary;
+                    line-height: 1.6;
+                }
+            }
+        }
+    }
+}

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import "../components/Styling/Builder.scss"
 
 const Builder: React.FC = () => {
     const [currentStep, setCurrentStep] = useState(1);

@@ -1,5 +1,5 @@
 import React from 'react';
-
+import "../components/Styling/Preview.scss"
 const Preview: React.FC = () => {
     const handleDownloadPDF = () => {
         console.log('Downloading PDF...');

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import "../components/Styling/Templates.scss"
 
 interface Template {
     id: string;
