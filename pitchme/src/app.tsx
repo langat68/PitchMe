@@ -1,17 +1,21 @@
-import { useState } from 'preact/hooks'
-import preactLogo from './assets/preact.svg'
-import viteLogo from '/vite.svg'
-//import './app.css'
-import Hero from "./components/Hero"
+import Home from './Pages/Home'
+import Builder from './Pages/Builder'
+import Preview from './Pages/Preview'
+import Templates from './Pages/Templates'
+import './App.css'
 
-export function App() {
-  
+function App() {
+
 
   return (
     <>
-      
-      <Hero/>
-      
+      <Home />
+      <Builder />
+      <Preview />
+      <Templates />
+
     </>
   )
 }
+
+export default App
